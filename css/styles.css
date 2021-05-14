@@ -22,7 +22,7 @@
 
  .jumbotron {
      padding: 30px;
-     background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B );
+     background-image: linear-gradient(to right, #60106B, #3046C5, #5637DD);
  }
 
  .row-content {
@@ -32,12 +32,11 @@
  }
 
  .navbar-dark {
-     background-color: #901cad;
+     background-color: #5637DD;
  }
 
  .tab-content {
      border: 1px solid #DDD;
-     border-top: none;
      padding: 10px;
  }
 
@@ -47,4 +46,8 @@
 
 .carousel {
     border: solid #5637DD;
+}
+
+#reservebutton {
+    background-color: #CEC8FF;
 }
