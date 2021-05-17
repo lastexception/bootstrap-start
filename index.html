@@ -217,6 +217,16 @@
                     <span class="carousel-control-next-icon"></span>
                     <span class="sr-only">Next</span>
                 </a>
+                <!-- carousel buttons -->
+                <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carouselPause">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carouselPlay">
+                        <i class="fa fa-play"></i>
+                    </button>
+                </div>
+                <!-- end carousel buttons -->
                 <!-- end carousel controls -->
             </div>
         </div>
@@ -309,7 +319,18 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-
+<!-- JQuery code for carousel buttons -->
+<script>
+    $(function() {
+        $(".carousel").carousel( { interval: 2000, pause: "false" } );
+        $("#carouselPause").click(function(){
+            $(".carousel").carousel("pause");
+        });
+        $("#carouselPlay").click(function(){
+            $(".carousel").carousel("cycle");
+        });
+    });
+</script>
 
 </body>
 
